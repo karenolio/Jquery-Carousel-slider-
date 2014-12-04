@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv ="Content-type" content="text/html; charset=UTF-8"/>
+		<title> Jquery Slider</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body> 
+		<div class = "page">
+
+			<h2> Jquery Image slider </h2>
+			
+			<div class ="carousel-outer">
+				<a class ="previousLink" href ="#"> Previous </a> <!--added "class = "previousLink" so we can call it in CSS and JS-->
+				
+				<div class="carousel-inner"> 
+					<!-- <div class ="brightness"> -->
+					<figure class = "tint"> <!--adds color filter on top of photo, see css-->
+						<img class="image-shown" src = "img/children.jpeg" alt="" />
+						<img class="image-hidden" src = "img/farm.jpeg" alt="" />
+						<img class="image-hidden" src = "img/house.jpeg" alt="" />
+						<img class="image-hidden" src = "img/water.jpeg" alt="" />
+					<!-- </div> -->
+					</div>
+				</div>
+				
+				<a class ="nextLink" href="#">Next</a> <!--added "class = "nextLink" so we can call it in CSS and JS-->
+
+			</div>
+
+		</div>
+
+		<script src="js/jquery.js"></script> <!-- for performance we include jquery.js in script right before closing body-->
+		<script src="js/custom.js"></script>
+
+		</script>
+	</body>
+</html>

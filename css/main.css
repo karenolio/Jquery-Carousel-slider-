@@ -1,0 +1,77 @@
+.image-shown added to first picture so that it's shown initially*/
+.image-shown
+{
+	display: inline-block;
+}
+
+/*.image-hidden added to all pictures after the first one so it's hidden initially*/
+.image-hidden
+{
+	display: none;
+}
+
+.carousel-inner /*container that holds images*/
+{
+	width: 90%;
+	height: 70%;
+	position: relative;
+	float: left; /*need to float this in order to have pics inbetween Prev and Next */
+}
+ 
+.carousel-inner img /*targets images inside carousel*/
+{
+	width: 100%; /*basically, asks this to take width to parent's (carousel inner) container */
+	height: 100%;
+}
+
+.previousLink, .nextLink
+{
+	float: left; /*so that the "Previous" and "Next" are not above and below the images*/
+	/*margin-top: 35%; */
+	/*margin-left: 60px;
+	margin-right: 60px;*/
+}
+
+/*.previousLink
+{
+	margin-right: 20px;
+}
+
+.nextLink {
+	/*margin-left:10px;
+}*/
+
+/*.brightness img {
+	filter: brightness(90%);
+	-webkit-filter: brightness(90%);
+	-moz-filter: brightness(90%);
+	-o-filter: brightness(90%);
+	-ms-filter: brightness(90%);
+}*/
+
+
+/*adds color filter on top of photo, see css*/
+.tint { 
+	position: relative;
+	float: left;
+	cursor: pointer;
+}
+
+.tint:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,255,255, 0.5);
+	-moz-transition: background .3s linear;
+	-webkit-transition: background .3s linear;
+	-o-transition: background .3s linear;
+	transition: background .3s linear;
+}
+
+.tint:hover:before {
+	background: none;
+}
